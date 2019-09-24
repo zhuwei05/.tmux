@@ -19,10 +19,29 @@ existing `~/.tmux.conf` first)
 
 ```
 $ cd
-$ git clone https://github.com/gpakosz/.tmux.git
+$ git clone https://github.com/zhuwei.alan/.tmux.git
 $ ln -s -f .tmux/.tmux.conf
 $ cp .tmux/.tmux.conf.local .
+$ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+$ tmux source ~/.tmux.conf
 ```
+
+Add [tpm](https://github.com/tmux-plugins/tpm)
+
+```
+$ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+$ tmux source ~/.tmux.conf
+```
+
+Install [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect)
+
+* prefix + Ctrl-s - save
+* prefix + Ctrl-r - restore
+
+```
+Hit prefix + I to fetch the plugin and source it. You should now be able to use the plugin
+```
+
 
 Then proceed to [customize] your `~/.tmux.conf.local` copy.
 
