@@ -21,9 +21,7 @@ existing `~/.tmux.conf` first)
 $ cd
 $ git clone https://github.com/zhuwei.alan/.tmux.git
 $ ln -s -f .tmux/.tmux.conf
-$ cp .tmux/.tmux.conf.local .
-$ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-$ tmux source ~/.tmux.conf
+$ ln -s -f .tmux/.tmux.conf.local
 ```
 
 Add [tpm](https://github.com/tmux-plugins/tpm)
