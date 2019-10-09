@@ -292,17 +292,19 @@ tmux_conf_copy_to_os_clipboard=false
 # set -g prefix C-a
 # bind C-a send-prefix
 
+# ============================
+# ====== customizations ======
+# ============================
+
 # unbind C-a
 set -gu prefix2
 unbind C-a
 
+# split current window vertically
+unbind _
+bind | split-window -h
+
 # move status line to top
 #set -g status-position top
 
-# List of plugins
-set -g @plugin 'tmux-plugins/tpm'
-set -g @plugin 'tmux-plugins/tmux-sensible'
-set -g @plugin 'tmux-plugins/tmux-resurrect'
 
-# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
-run -b '~/.tmux/plugins/tpm/tpm'
